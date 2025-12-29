@@ -2,8 +2,8 @@ from pygame.math import Vector2
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-SCREEN_WIDTH = 1280
-SCREEN_HEIGHT = 720
+SCREEN_WIDTH = 1302
+SCREEN_HEIGHT = 736
 FPS = 60  # Set to 60 for smoother platforming
 TILE_SIZE = 64
 PLAYER_WIDTH = 16
@@ -25,7 +25,7 @@ SPRITESHEET_PATH = "data/graphics/Character/"
 LEVELS_PATH = os.path.join(BASE_DIR, "data", "tmx")
 
 
-TILESIZE2 = 16
+TILESIZE2 = 32
 
 
 SPEED_HERO = 4
