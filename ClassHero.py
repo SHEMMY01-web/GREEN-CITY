@@ -65,6 +65,7 @@ jumpSprites = [
 class Hero(pygame.sprite.Sprite):
     def __init__(self, position, faceRight):
         super().__init__()
+        self.hitbox = pygame.Rect(0, 0, 40, 50)
 
         # Load spritesheets
         idleSpriteSheet = SpriteSheet(SPRITESHEET_PATH + "/Idle/Idle-Sheet.png", idleSprites)
@@ -178,27 +179,6 @@ class Hero(pygame.sprite.Sprite):
         # Attack input(left,right)
         if keys[pygame.K_SPACE] and self.currentState != 'DIE':
             self.currentState = 'ATTACK'
-        
-        # 2. Apply physics
-        if not self.on_ground:
-            self.y_vel += self.gravity * dt
- 
-            # Attack input
-            if keys[pygame.K_SPACE]:
-                self.currentState = 'ATTACK'
-            # Movement input
-            elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
-                self.xDir = -1
-                self.facingRight = False
-                self.currentState = 'RUN'
-            elif keys[pygame.K_RIGHT] or keys[pygame.K_d]:
-                self.xDir = 1
-                self.facingRight = True
-                self.currentState = 'RUN'
-            else:
-                self.currentState = 'IDLE'
-                self.xDir = 0
-        
         # 2. Apply physics
         # Apply gravity
         if not self.on_ground:
@@ -214,25 +194,26 @@ class Hero(pygame.sprite.Sprite):
         for tile in collisions:
             if self.xDir > 0:  # Moving right
                 self.rect.right = tile.rect.left
-                new_x = float(self.rect.centerx)
+                new_x = float(self.rect.x) # Keep the top-left corner as the anchor
             elif self.xDir < 0:  # Moving left
                 self.rect.left = tile.rect.right
-                new_x = float(self.rect.centerx)
-        
+            new_x = float(self.rect.x) # Keep the top-left corner as the anchor
+
         # 4. Platform collision (vertical)
         self.rect.y = int(new_y)
         collisions = pygame.sprite.spritecollide(self, level.platformTiles, False)
         self.on_ground = False
+        
         for tile in collisions:
             if self.y_vel > 0:  # Falling down
                 self.rect.bottom = tile.rect.top
-                new_y = float(self.rect.centery)
                 self.y_vel = 0
                 self.on_ground = True
             elif self.y_vel < 0:  # Jumping up
                 self.rect.top = tile.rect.bottom
-                new_y = float(self.rect.centery)
                 self.y_vel = 0
+            # Reset float position to the top-left of the resolved rect
+            new_y = float(self.rect.y)
         
         # Update positions
         self.xPos = new_x
@@ -247,7 +228,8 @@ class Hero(pygame.sprite.Sprite):
             self.rect = pygame.Rect(self.xPos - 44, self.yPos - 64, 88, 64)
         elif self.currentState == 'DIE':
             self.rect = pygame.Rect(self.xPos - 32, self.yPos - 48, 64, 48)
-        
+        self.hitbox.midbottom = (int(self.xPos), int(self.yPos))
+        self.rect.center = self.hitbox.center # Only for drawing
         # 6. Screen Boundaries
         if self.rect.left < 0:
             self.rect.left = 0
