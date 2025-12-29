@@ -1,0 +1,773 @@
+{
+  "image": "medievalRTS_spritesheet.png",
+  "frames": {
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_01.png": {
+      "x": 3526,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_02.png": {
+      "x": 3594,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_03.png": {
+      "x": 3662,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_04.png": {
+      "x": 3730,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_05.png": {
+      "x": 3798,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_06.png": {
+      "x": 3866,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_07.png": {
+      "x": 3934,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_08.png": {
+      "x": 4002,
+      "y": 2,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_09.png": {
+      "x": 3526,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_10.png": {
+      "x": 3594,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_11.png": {
+      "x": 3662,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_12.png": {
+      "x": 3730,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_13.png": {
+      "x": 3798,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_14.png": {
+      "x": 3866,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_15.png": {
+      "x": 3934,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_16.png": {
+      "x": 4002,
+      "y": 70,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_17.png": {
+      "x": 3526,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_18.png": {
+      "x": 3594,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_19.png": {
+      "x": 3662,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_20.png": {
+      "x": 3730,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Environment/medievalEnvironment_21.png": {
+      "x": 3798,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_01.png": {
+      "x": 3866,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_02.png": {
+      "x": 3934,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_03.png": {
+      "x": 4002,
+      "y": 138,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_04.png": {
+      "x": 3526,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_05.png": {
+      "x": 3594,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_06.png": {
+      "x": 3662,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_07.png": {
+      "x": 3730,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_08.png": {
+      "x": 3798,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_09.png": {
+      "x": 3866,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_10.png": {
+      "x": 3934,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_11.png": {
+      "x": 4002,
+      "y": 206,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_12.png": {
+      "x": 3526,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_13.png": {
+      "x": 3594,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_14.png": {
+      "x": 3662,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_15.png": {
+      "x": 3730,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_16.png": {
+      "x": 3798,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_17.png": {
+      "x": 3866,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_18.png": {
+      "x": 3934,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_19.png": {
+      "x": 4002,
+      "y": 274,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_20.png": {
+      "x": 3526,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_21.png": {
+      "x": 3594,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_22.png": {
+      "x": 3662,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Structure/medievalStructure_23.png": {
+      "x": 3730,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_01.png": {
+      "x": 3798,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_02.png": {
+      "x": 3866,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_03.png": {
+      "x": 3934,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_04.png": {
+      "x": 4002,
+      "y": 342,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_05.png": {
+      "x": 3526,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_06.png": {
+      "x": 3594,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_07.png": {
+      "x": 3662,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_08.png": {
+      "x": 3730,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_09.png": {
+      "x": 3798,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_10.png": {
+      "x": 3866,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_11.png": {
+      "x": 3934,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_12.png": {
+      "x": 4002,
+      "y": 410,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_13.png": {
+      "x": 3526,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_14.png": {
+      "x": 3594,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_15.png": {
+      "x": 3662,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_16.png": {
+      "x": 3730,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_17.png": {
+      "x": 3798,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_18.png": {
+      "x": 3866,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_19.png": {
+      "x": 3934,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_20.png": {
+      "x": 4002,
+      "y": 478,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_21.png": {
+      "x": 3526,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_22.png": {
+      "x": 3594,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_23.png": {
+      "x": 3662,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_24.png": {
+      "x": 3730,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_25.png": {
+      "x": 3798,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_26.png": {
+      "x": 3866,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_27.png": {
+      "x": 3934,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_28.png": {
+      "x": 4002,
+      "y": 546,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_29.png": {
+      "x": 3526,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_30.png": {
+      "x": 3594,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_31.png": {
+      "x": 3662,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_32.png": {
+      "x": 3730,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_33.png": {
+      "x": 3798,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_34.png": {
+      "x": 3866,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_35.png": {
+      "x": 3934,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_36.png": {
+      "x": 4002,
+      "y": 614,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_37.png": {
+      "x": 3526,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_38.png": {
+      "x": 3594,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_39.png": {
+      "x": 3662,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_40.png": {
+      "x": 3730,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_41.png": {
+      "x": 3798,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_42.png": {
+      "x": 3866,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_43.png": {
+      "x": 3934,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_44.png": {
+      "x": 4002,
+      "y": 682,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_45.png": {
+      "x": 3526,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_46.png": {
+      "x": 3594,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_47.png": {
+      "x": 3662,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_48.png": {
+      "x": 3730,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_49.png": {
+      "x": 3798,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_50.png": {
+      "x": 3866,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_51.png": {
+      "x": 3934,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_52.png": {
+      "x": 4002,
+      "y": 750,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_53.png": {
+      "x": 3526,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_54.png": {
+      "x": 3594,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_55.png": {
+      "x": 3662,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_56.png": {
+      "x": 3730,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_57.png": {
+      "x": 3798,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Tile/medievalTile_58.png": {
+      "x": 3866,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_01.png": {
+      "x": 3934,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_02.png": {
+      "x": 4002,
+      "y": 818,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_03.png": {
+      "x": 3526,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_04.png": {
+      "x": 3594,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_05.png": {
+      "x": 3662,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_06.png": {
+      "x": 3730,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_07.png": {
+      "x": 3798,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_08.png": {
+      "x": 3866,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_09.png": {
+      "x": 3934,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_10.png": {
+      "x": 4002,
+      "y": 886,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_11.png": {
+      "x": 3526,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_12.png": {
+      "x": 3594,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_13.png": {
+      "x": 3662,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_14.png": {
+      "x": 3730,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_15.png": {
+      "x": 3798,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_16.png": {
+      "x": 3866,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_17.png": {
+      "x": 3934,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_18.png": {
+      "x": 4002,
+      "y": 954,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_19.png": {
+      "x": 3526,
+      "y": 1022,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_20.png": {
+      "x": 3594,
+      "y": 1022,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_21.png": {
+      "x": 3662,
+      "y": 1022,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_22.png": {
+      "x": 3730,
+      "y": 1022,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_23.png": {
+      "x": 3798,
+      "y": 1022,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/PNG/Default size/Unit/medievalUnit_24.png": {
+      "x": 3866,
+      "y": 1022,
+      "width": 64,
+      "height": 64
+    },
+    "kenney_medieval-rts/Tilesheet/RTS_medieval@2.png": {
+      "x": 2,
+      "y": 2,
+      "width": 3520,
+      "height": 1408
+    },
+    "kenney_medieval-rts/Tilesheet/medieval_tilesheet.png": {
+      "x": 2,
+      "y": 1414,
+      "width": 1760,
+      "height": 704
+    }
+  }
+}
