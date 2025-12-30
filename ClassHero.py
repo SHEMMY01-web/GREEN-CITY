@@ -150,7 +150,7 @@ class Hero(pygame.sprite.Sprite):
             self.jump_buffer_timer = self.jump_buffer_time
         
         # Jump conditions
-        can_jump_now = (self.on_ground or self.coyote_timer > 0) and self.can_jump
+        can_jump_now = (self.on_ground or self.coyote_timer > 0) and self.can_jump and self.currentState != 'DIE'
         has_buffered_jump = self.jump_buffer_timer > 0
         
         # Perform jump

@@ -14,7 +14,7 @@ PLATFORMER = "platformer"
 
 # Platformer Physics (tuned for dt)
 GRAVITY = 1800
-JUMP_SPEED = -800
+JUMP_SPEED = -1100
 PLATFORMER_SPEED = 400
 ANIMATION_SPEED = 10
 
