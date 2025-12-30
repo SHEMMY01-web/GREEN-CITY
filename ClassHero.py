@@ -238,11 +238,12 @@ class Hero(pygame.sprite.Sprite):
         self.hitbox.midbottom = (int(self.xPos), int(self.yPos))
         self.rect.center = self.hitbox.center # Only for drawing
         # 6. Screen Boundaries
+        # Use map boundaries from the level object
         if self.rect.left < 0:
             self.rect.left = 0
             self.xPos = float(self.rect.centerx)
-        elif self.rect.right > SCREEN_WIDTH:
-            self.rect.right = SCREEN_WIDTH
+        elif self.rect.right > level.map_width:
+            self.rect.right = level.map_width
             self.xPos = float(self.rect.centerx)
         
         # 7. Handle Animations
@@ -300,4 +301,5 @@ class Hero(pygame.sprite.Sprite):
                         enemy.die()
             else:
                 if enemy.currentState != 'DYING':
-                    self.die()
+                    # self.die()
+                    pass

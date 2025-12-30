@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SCREEN_WIDTH = 1302
 SCREEN_HEIGHT = 736
-FPS = 60  # Set to 60 for smoother platforming
+FPS = 40  # Set to 60 for smoother platforming
 TILE_SIZE = 64
 PLAYER_WIDTH = 16
 
