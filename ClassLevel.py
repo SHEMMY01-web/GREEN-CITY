@@ -46,6 +46,8 @@ class level():
                             
             except ValueError:
                 print(f"Warning: Layer '{layer_name}' not found.")
+                
+        # --- HERO ---
 
         # --- HERO ---
         # Apply vertical_offset so the hero starts on the ground of the shifted map

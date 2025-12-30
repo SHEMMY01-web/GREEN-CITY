@@ -17,9 +17,11 @@ class Game:
         self.running = True
         self.platformer_level = None
 
+
     def run(self):
         while self.running:
             dt = self.clock.tick(FPS) / 1000
+            if dt > 0.05: dt = 0.05 # Cap dt to prevent tunneling on lag spikes
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.running = False
