@@ -118,6 +118,14 @@ class Hero(pygame.sprite.Sprite):
         self.currentAnimation = []
         self.animationSpeed = ANIMSPEED_HERO_DEFAULT
         self.selectAnimation()
+        
+        # Ensure self.image is set immediately
+        if self.currentAnimation:
+            self.image = self.currentAnimation[0]
+        else:
+            # Fallback if no animation found
+            self.image = pygame.Surface((40, 50))
+            self.image.fill((255, 0, 0)) # Red box for visibility
 
     def update(self, level, dt):
         self.previousState = self.currentState
@@ -189,18 +197,17 @@ class Hero(pygame.sprite.Sprite):
         new_y = self.yPos + (self.y_vel * dt)
         
         # 3. Platform collision (horizontal)
-        self.rect.x = int(new_x)
+        self.rect.centerx = int(new_x)
         collisions = pygame.sprite.spritecollide(self, level.platformTiles, False)
         for tile in collisions:
             if self.xDir > 0:  # Moving right
                 self.rect.right = tile.rect.left
-                new_x = float(self.rect.x) # Keep the top-left corner as the anchor
             elif self.xDir < 0:  # Moving left
                 self.rect.left = tile.rect.right
-            new_x = float(self.rect.x) # Keep the top-left corner as the anchor
+            new_x = float(self.rect.centerx) # Keep center as anchor
 
         # 4. Platform collision (vertical)
-        self.rect.y = int(new_y)
+        self.rect.bottom = int(new_y)
         collisions = pygame.sprite.spritecollide(self, level.platformTiles, False)
         self.on_ground = False
         
@@ -212,8 +219,8 @@ class Hero(pygame.sprite.Sprite):
             elif self.y_vel < 0:  # Jumping up
                 self.rect.top = tile.rect.bottom
                 self.y_vel = 0
-            # Reset float position to the top-left of the resolved rect
-            new_y = float(self.rect.y)
+            # Reset float position to the bottom of the resolved rect
+            new_y = float(self.rect.bottom)
         
         # Update positions
         self.xPos = new_x
