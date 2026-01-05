@@ -64,7 +64,7 @@ class level():
                         self.all_sprites.add(tile)
                         
                         # Add to collision group if the layer is a platform
-                        if layer_name == 'Platforms': # Adjust based on your Tiled layer name
+                        if layer_name == 'Platforms' or layer_name == 'slider': # Adjust based on your Tiled layer name
                             self.platformTiles.add(tile)
                             
             except ValueError:
