@@ -38,10 +38,11 @@ class Level:
                 h = obj.height if obj.height > 0 else 64
                 y_pos = obj.y - h
                 self.portal_trigger = pygame.Rect(obj.x, y_pos, w, h)
-                print("Layers in latest-map.tmx:")
+                # print("Layers in latest-map.tmx:")
                 for layer in tmx_data.layers:
                     if hasattr(layer, "name"):
-                        print(f"  - {layer.name}")
+                        # print(f"  - {layer.name}")
+                        pass
 
         for layer_name in ["Ground", "Roads", "Stones", "Trees", "Building"]:
             layer = tmx_data.get_layer_by_name(layer_name)

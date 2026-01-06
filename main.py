@@ -16,6 +16,7 @@ class Game:
         self.village_level = Level()
         self.running = True
         self.platformer_level = None
+        self.game_over_start_time = 0
 
 
     def run(self):
@@ -35,7 +36,7 @@ class Game:
                             self.state = PLATFORMER
                             # Initialize the platformer level
                             self.platformer_level = level(
-                                self.screen, self.switch_to_village
+                                self.screen, self.switch_to_village, self.switch_to_game_over
                             )
 
             if self.state == VILLAGE:
@@ -43,12 +44,29 @@ class Game:
             elif self.state == PLATFORMER and self.platformer_level:
                 self.platformer_level.run(dt)
 
+            elif self.state == GAME_OVER:
+                self.screen.fill((0, 0, 0))  # Black screen
+                font = pygame.font.Font(None, 74)
+                text = font.render("GAME OVER", True, (255, 0, 0))
+                text_rect = text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
+                self.screen.blit(text, text_rect)
+                
+                # Check timer
+                if pygame.time.get_ticks() - self.game_over_start_time > 3000:  # 3 seconds
+                    self.switch_to_village()
+
             pygame.display.flip()
 
     def switch_to_village(self):
         """Callback function to return from platformer"""
         self.state = VILLAGE
         self.platformer_level = None  # Free up memory
+
+    def switch_to_game_over(self):
+        """Callback to switch to game over screen"""
+        self.state = GAME_OVER
+        self.game_over_start_time = pygame.time.get_ticks()
+        self.platformer_level = None
 
 
 if __name__ == "__main__":

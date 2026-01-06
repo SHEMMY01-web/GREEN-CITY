@@ -4,17 +4,18 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SCREEN_WIDTH = 1302
 SCREEN_HEIGHT = 736
-FPS = 40  # Set to 60 for smoother platforming
+FPS = 60  # Set to 60 for smoother platforming
 TILE_SIZE = 64
 PLAYER_WIDTH = 16
 
 # Game States
 VILLAGE = "village"
 PLATFORMER = "platformer"
+GAME_OVER = "game_over"
 
 # Platformer Physics (tuned for dt)
 GRAVITY = 1800
-JUMP_SPEED = -1100
+JUMP_SPEED = -900
 PLATFORMER_SPEED = 400
 ANIMATION_SPEED = 10
 
@@ -52,12 +53,13 @@ LAYERS2 = {
     "Ground":0,
     "Platforms":1,
     "Rails":2,
+    "slider":3,
     # 'Background1': 0,
     # 'Background2': 1,
     # 'Background3': 2,
     # 'Background4': 3,
     # 'Platforms':   4,
     # 'Objects':     5,
-    'player':      3, # Player is usually near the top
+    'player':      4, # Player is usually near the top
     # 'Foreground':  7  # Always on top of everything
 }

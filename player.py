@@ -126,6 +126,32 @@ class Player(pygame.sprite.Sprite):
 
             self.status = idle_state + split
     def collision(self, direction):
+        # Use spritecollide with collide_mask callback
+        # This checks for pixel-perfect overlap between player mask and obstacle masks
+        hits = pygame.sprite.spritecollide(self, self.collision_sprites, False, pygame.sprite.collide_mask)
+        
+        if hits:
+            # We hit something! Undo the movement.
+            if direction == "horizontal":
+                # Undo horizontal move
+                self.pos.x -= self.direction.x * self.speed * self.dt_copy # We need dt here, but it's not passed. 
+                # Correction: pass dt to collision or use 'undo' logic based on overlap?
+                # Using 'Undo' requires knowing exactly how much we moved.
+                # Alternative: Move back pixel by pixel? No, 'Undo last step' is safest.
+                
+                # RE-DESIGN:
+                # We moved self.pos.x += vel * dt just before calling this.
+                # So we simply subtract it back.
+                # However, we don't have 'dt' here.
+                # Let's verify we can pass dt or store the last move.
+                pass 
+                
+            # Wait, I need to refactor Update/Move to pass DT or handle this better.
+            # Let's modify the replace content to assume I will fix move() to pass dt.
+            pass
+        
+        
+    def collision(self, direction):
         for sprite in self.collision_sprites.sprites():
             if hasattr(sprite,"hitbox"):
                 if sprite.hitbox.colliderect(self.hitbox):

@@ -41,7 +41,7 @@ class Bee(pygame.sprite.Sprite):
         # When flying outside the window, just turn around
         if self.rect.right < 0:
             self.movingRight = True
-        if self.rect.left > SCREEN_WIDTH:
+        if self.rect.left > level.map_width:
             self.movingRight = False
 
         if self.currentState == 'DYING':
@@ -87,6 +87,7 @@ class Bee(pygame.sprite.Sprite):
                 self.animationIndex = 0
 
         self.image = self.currentAnimation[int(self.animationIndex)]
+        self.mask = pygame.mask.from_surface(self.image)
 
 
     def selectAnimation(self):
